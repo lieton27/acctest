@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LoginTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7046d05e-88a8-4d17-a6b3-99a55447170b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>306a70d1-736f-4f38-9716-393776b5a947</id>
+      <masked>false</masked>
+      <name>loginUsername</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fdf396ba-dcb8-4460-be33-16db13d4ad56</id>
+      <masked>false</masked>
+      <name>loginPass</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ba646732-41a5-4213-bf5d-84b7cd923e2e</id>
+      <masked>false</masked>
+      <name>vExpectedResult</name>
+   </variable>
+</TestCaseEntity>

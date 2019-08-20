@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>LoginLogoutSuite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>42f157ee-746d-4594-8f4a-4561c4a755fb</testSuiteGuid>
+   <testCaseLink>
+      <guid>2b3db035-2bf1-4fdd-b420-1ba267fd2192</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/LoginLogout/LoginTest</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3fb25aaa-d601-4c03-9c61-5e20d911cf14</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/LoginLogoutData/Login</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>3fb25aaa-d601-4c03-9c61-5e20d911cf14</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>loginUsername</value>
+         <variableId>306a70d1-736f-4f38-9716-393776b5a947</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3fb25aaa-d601-4c03-9c61-5e20d911cf14</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>loginPass</value>
+         <variableId>fdf396ba-dcb8-4460-be33-16db13d4ad56</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3fb25aaa-d601-4c03-9c61-5e20d911cf14</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>vExpectedResult</value>
+         <variableId>ba646732-41a5-4213-bf5d-84b7cd923e2e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>53d5eeb4-f429-408f-b9cd-669913a04fa0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/LoginLogout/ForgotPasswordTest</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c33c22b0-e51e-4a15-89c3-0bdcb44b59ce</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/LoginLogoutData/ForgotPasswordData</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>c33c22b0-e51e-4a15-89c3-0bdcb44b59ce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>vEmailLupa</value>
+         <variableId>f4e07e9a-1bd1-414e-88aa-7e1ea83ccbab</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c33c22b0-e51e-4a15-89c3-0bdcb44b59ce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>vExpectedResult</value>
+         <variableId>956d47cf-f64f-4807-869c-db6c81e0e39c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c33c22b0-e51e-4a15-89c3-0bdcb44b59ce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>vCondition</value>
+         <variableId>c527e6ba-8b04-43fc-bc59-1593c68387d4</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
