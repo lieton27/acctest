@@ -37,14 +37,29 @@ switch (vExpectedResult.toString()) {
     case 'Passed':
         Mobile.verifyElementVisible(findTestObject('ForgotPassword/OTPNotif'), 0)
 
+        Mobile.waitForElementPresent(findTestObject('ForgotPassword/ChangePassword/LabelEnterNewPass'), 0)
+
+        Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewPass'), '', 0)
+
+        Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewVpass'), '', 0)
+
+        switch (vExpectedChange.toString()) {
+            case 'Failed':
+                break
+                
+                if (changeCondition.toString() == 'nPassEmpty') {
+                    Mobile.verifyElementVisible(findTestObject('ForgotPassword/ChangePassword/WarnEmptyPass'), 0)
+                }
+            case Passed:
+                break
+                
+                Mobile.verifyElementVisible(findTestObject('LoginPage/LabelSelamatDatang'), 0)
+            default:
+                break
+        }
+        
         break
 }
-
-Mobile.waitForElementPresent(findTestObject('ForgotPassword/ChangePassword/LabelEnterNewPass'), 0)
-
-Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewPass'), '', 0)
-
-Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewVpass'), '', 0)
 
 Mobile.closeApplication()
 

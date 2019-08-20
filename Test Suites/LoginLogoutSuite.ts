@@ -57,6 +57,15 @@
          </iterationEntity>
          <testDataId>Data Files/LoginLogoutData/ForgotPasswordData</testDataId>
       </testDataLink>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>44c403d8-4c12-4d9f-b9fd-9cfc86e620e2</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/LoginLogoutData/ChangePass</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId>c33c22b0-e51e-4a15-89c3-0bdcb44b59ce</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -74,6 +83,30 @@
          <type>DATA_COLUMN</type>
          <value>vCondition</value>
          <variableId>c527e6ba-8b04-43fc-bc59-1593c68387d4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>44c403d8-4c12-4d9f-b9fd-9cfc86e620e2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newPassword</value>
+         <variableId>c0fa52a5-f741-4fcc-ba1f-6e5d399919b6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>44c403d8-4c12-4d9f-b9fd-9cfc86e620e2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>confPassword</value>
+         <variableId>3f9f7fd5-e501-4891-8e48-59b336414f23</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>44c403d8-4c12-4d9f-b9fd-9cfc86e620e2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>vExpectedChange</value>
+         <variableId>499f1ada-4c88-40bf-a8cf-485b4c6b7650</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>44c403d8-4c12-4d9f-b9fd-9cfc86e620e2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>changeCondition</value>
+         <variableId>4185744f-8783-45be-a779-0a92f55a248c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
