@@ -49,20 +49,20 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/LoginLogout/ForgotPasswordTest</testCaseId>
       <testDataLink>
-         <combinationType>ONE</combinationType>
+         <combinationType>MANY</combinationType>
          <id>c33c22b0-e51e-4a15-89c3-0bdcb44b59ce</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>3</value>
          </iterationEntity>
          <testDataId>Data Files/LoginLogoutData/ForgotPasswordData</testDataId>
       </testDataLink>
       <testDataLink>
-         <combinationType>ONE</combinationType>
+         <combinationType>MANY</combinationType>
          <id>44c403d8-4c12-4d9f-b9fd-9cfc86e620e2</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>5-6</value>
          </iterationEntity>
          <testDataId>Data Files/LoginLogoutData/ChangePass</testDataId>
       </testDataLink>

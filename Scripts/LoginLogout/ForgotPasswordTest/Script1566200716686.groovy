@@ -39,22 +39,34 @@ switch (vExpectedResult.toString()) {
 
         Mobile.waitForElementPresent(findTestObject('ForgotPassword/ChangePassword/LabelEnterNewPass'), 0)
 
-        Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewPass'), '', 0)
+        Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewPass'), newPassword, 0)
 
-        Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewVpass'), '', 0)
+        Mobile.setText(findTestObject('ForgotPassword/ChangePassword/FieldNewVpass'), confPassword, 0)
+
+        Mobile.tap(findTestObject('ForgotPassword/ChangePassword/BtnSimpan'), 0)
 
         switch (vExpectedChange.toString()) {
             case 'Failed':
-                break
-                
                 if (changeCondition.toString() == 'nPassEmpty') {
                     Mobile.verifyElementVisible(findTestObject('ForgotPassword/ChangePassword/WarnEmptyPass'), 0)
+                } else if (changeCondition.toString() == 'cPassEmpty') {
+                    Mobile.verifyElementVisible(findTestObject('ForgotPassword/ChangePassword/WarnEmptyVPass'), 0)
+                } else if (changeCondition.toString() == 'emptyField') {
+                    Mobile.verifyElementVisible(findTestObject('ForgotPassword/ChangePassword/WarnEmptyPass'), 0)
+
+                    Mobile.verifyElementVisible(findTestObject('ForgotPassword/ChangePassword/WarnEmptyVPass'), 0)
+                } else if (changeCondition.toString() == 'wrongNPass') {
+                    Mobile.verifyElementVisible(findTestObject('ForgotPassword/ChangePassword/WarnWrongPass'), 0)
+                } else if (changeCondition.toString() == wrongCPass) {
+                    Mobile.verifyElementVisible(findTestObject('ForgotPassword/ChangePassword/WarnWrongVPass'), 0)
                 }
-            case Passed:
-                break
                 
+                break
+            case Passed:
+                Mobile.waitForElementPresent(findTestObject('LoginPage/LabelSelamatDatang'), 0)
+
                 Mobile.verifyElementVisible(findTestObject('LoginPage/LabelSelamatDatang'), 0)
-            default:
+
                 break
         }
         
