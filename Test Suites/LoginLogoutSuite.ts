@@ -46,7 +46,7 @@
    <testCaseLink>
       <guid>53d5eeb4-f429-408f-b9cd-669913a04fa0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/LoginLogout/ForgotPasswordTest</testCaseId>
       <testDataLink>
          <combinationType>MANY</combinationType>
