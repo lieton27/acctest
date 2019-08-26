@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CariMobilTest - Detailed Search</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3e9cd50-1579-428c-bce9-2ccd19bd92ab</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>54d2343e-e9dc-43e5-95c8-e91afa1b5f80</id>
+      <masked>false</masked>
+      <name>merek</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>534bad7c-0410-4e8b-83d0-34082a44f3e7</id>
+      <masked>false</masked>
+      <name>tipe</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9c9ea2bf-60a1-46d6-988a-3886a785c842</id>
+      <masked>false</masked>
+      <name>lokasi</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b06c3708-0eb6-468a-bfa4-44e4ec39b4a0</id>
+      <masked>false</masked>
+      <name>expectedResult</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>90a84862-6e96-4c0c-ade9-287df91115e5</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>
