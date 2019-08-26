@@ -19,49 +19,108 @@ Mobile.tap(findTestObject('Homepage/FieldCariMobil'), 0)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('CariMobilObjects/DropdownMerek'), 0)
+switch (expectedResult.toString()) {
+    case 'Success':
+        Mobile.tap(findTestObject('CariMobilObjects/DropdownMerek'), 0)
 
-Mobile.tap(findTestObject('CariMobilObjects/SearchMerek'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/SearchMerek'), 0)
 
-Mobile.setText(findTestObject('CariMobilObjects/SearchMerek'), 'Toyota', 0)
+        Mobile.setText(findTestObject('CariMobilObjects/SearchMerek'), merek, 0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('CariMobilObjects/OptionToyota'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/OptionToyota'), 0)
 
-Mobile.tap(findTestObject('CariMobilObjects/DropdownTipe'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/DropdownTipe'), 0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('CariMobilObjects/SearchTipe'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/SearchTipe'), 0)
 
-Mobile.setText(findTestObject('CariMobilObjects/SearchTipe'), 'Alphard', 0)
+        Mobile.setText(findTestObject('CariMobilObjects/SearchTipe'), tipe, 0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('CariMobilObjects/OptionAlphard'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/OptionAlphard'), 0)
 
-Mobile.tap(findTestObject('CariMobilObjects/DropdownLokasi'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/DropdownLokasi'), 0)
 
-Mobile.tap(findTestObject('CariMobilObjects/SearchLokasi'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/SearchLokasi'), 0)
 
-Mobile.setText(findTestObject('CariMobilObjects/SearchLokasi'), 'Semarang', 0)
+        Mobile.setText(findTestObject('CariMobilObjects/SearchLokasi'), lokasi, 0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('CariMobilObjects/OptionSemarang'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/OptionSemarang'), 0)
 
-Mobile.tap(findTestObject('CariMobilObjects/BtnPencarianLanjutan'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/BtnPencarianLanjutan'), 0)
 
-not_run: Mobile.setSliderValue(findTestObject('CariMobilObjects/SliderHarga'), 90, 0)
+        Mobile.setText(findTestObject('CariMobilObjects/HargaMinimal'), '1', 0)
 
-CustomKeywords.'scrolling.Scroll.swipeTopToBottom'()
+        Mobile.setText(findTestObject('CariMobilObjects/HargaMaximal'), '2000', 0)
 
-Mobile.tap(findTestObject('CariMobilObjects/BtnCariMobil'), 0)
+        not_run: Mobile.setSliderValue(findTestObject('CariMobilObjects/SliderHarga'), 90, 0)
 
-Mobile.verifyElementVisible(findTestObject('CariMobilObjects/LabelAlphard'), 0)
+        CustomKeywords.'scrolling.Scroll.swipeTopToBottom'()
 
-Mobile.tap(findTestObject('CariMobilObjects/LabelAlphard'), 0)
+        Mobile.tap(findTestObject('CariMobilObjects/BtnCariMobil'), 0)
+
+        Mobile.verifyElementVisible(findTestObject('CariMobilObjects/LabelAlphard'), 0)
+
+        Mobile.tap(findTestObject('CariMobilObjects/LabelAlphard'), 0)
+
+        if (condition.toString() == 'hapus') {
+            Mobile.tap(findTestObject('CariMobilObjects/BtnHapus'), 0)
+
+            Mobile.verifyElementNotHasAttribute(findTestObject('CariMobilObjects/HargaMinimal'), '', 0)
+        }
+        
+        break
+    case 'Failed':
+        Mobile.tap(findTestObject('CariMobilObjects/DropdownMerek'), 0)
+
+        Mobile.tap(findTestObject('CariMobilObjects/SearchMerek'), 0)
+
+        Mobile.setText(findTestObject('CariMobilObjects/SearchMerek'), merek, 0)
+
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('CariMobilObjects/CloseMerk'), 0)
+
+        Mobile.tap(findTestObject('CariMobilObjects/DropdownTipe'), 0)
+
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('CariMobilObjects/SearchTipe'), 0)
+
+        Mobile.setText(findTestObject('CariMobilObjects/SearchTipe'), tipe, 0)
+
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('CariMobilObjects/CloseTipe'), 0)
+
+        Mobile.tap(findTestObject('CariMobilObjects/DropdownLokasi'), 0)
+
+        Mobile.tap(findTestObject('CariMobilObjects/SearchLokasi'), 0)
+
+        Mobile.setText(findTestObject('CariMobilObjects/SearchLokasi'), lokasi, 0)
+
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('CariMobilObjects/CloseLokasi'), 0)
+
+        Mobile.tap(findTestObject('CariMobilObjects/BtnPencarianLanjutan'), 0)
+
+        not_run: Mobile.setSliderValue(findTestObject('CariMobilObjects/SliderHarga'), 90, 0)
+
+        CustomKeywords.'scrolling.Scroll.swipeTopToBottom'()
+
+        Mobile.tap(findTestObject('CariMobilObjects/BtnCariMobil'), 0)
+
+        break
+        
+        Mobile.verifyElementVisible(findTestObject('CariMobilObjects/BtnCariMobil'), 0)
+}
 
 Mobile.closeApplication()
 
