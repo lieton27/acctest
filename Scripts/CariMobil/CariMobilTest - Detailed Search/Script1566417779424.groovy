@@ -29,8 +29,10 @@ switch (expectedResult.toString()) {
 
         Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tap(findTestObject('CariMobilObjects/OptionToyota'), 0)
-
+        if (merek.toString() == 'Toyota') {
+            Mobile.tap(findTestObject('CariMobilObjects/OptionToyota'), 0)
+        }
+        
         Mobile.tap(findTestObject('CariMobilObjects/DropdownTipe'), 0)
 
         Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -41,8 +43,10 @@ switch (expectedResult.toString()) {
 
         Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tap(findTestObject('CariMobilObjects/OptionAlphard'), 0)
-
+        if (tipe.toString() == 'Alphard') {
+            Mobile.tap(findTestObject('CariMobilObjects/OptionAlphard'), 0)
+        }
+        
         Mobile.tap(findTestObject('CariMobilObjects/DropdownLokasi'), 0)
 
         Mobile.tap(findTestObject('CariMobilObjects/SearchLokasi'), 0)
@@ -51,8 +55,10 @@ switch (expectedResult.toString()) {
 
         Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tap(findTestObject('CariMobilObjects/OptionSemarang'), 0)
-
+        if (lokasi.toString() == 'Semarang') {
+            Mobile.tap(findTestObject('CariMobilObjects/OptionSemarang'), 0)
+        }
+        
         Mobile.tap(findTestObject('CariMobilObjects/BtnPencarianLanjutan'), 0)
 
         Mobile.setText(findTestObject('CariMobilObjects/HargaMinimal'), '1', 0)
