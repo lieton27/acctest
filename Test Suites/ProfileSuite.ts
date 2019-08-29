@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>ProfileSuite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>5b2f33da-3366-4a83-a10b-39f130f2b364</testSuiteGuid>
+   <testCaseLink>
+      <guid>30490582-e41e-494c-8103-871636296280</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Profile/GantiPasswordTest</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ebb13d1a-a8af-4da1-b60f-1597d92e57a4</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1,4</value>
+         </iterationEntity>
+         <testDataId>Data Files/ProfileData/GantiPassword</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>ebb13d1a-a8af-4da1-b60f-1597d92e57a4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>oldPassword</value>
+         <variableId>38191716-8284-428b-b6b2-38124f03cfc2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ebb13d1a-a8af-4da1-b60f-1597d92e57a4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newPassword</value>
+         <variableId>6ff14f96-7461-4f3f-b468-ab22a21f36b4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ebb13d1a-a8af-4da1-b60f-1597d92e57a4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newConfPassword</value>
+         <variableId>6e532646-7980-4228-9652-7147979cd5c7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ebb13d1a-a8af-4da1-b60f-1597d92e57a4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>result</value>
+         <variableId>3a8512f1-e725-4db8-a7a0-3fbeb5aba808</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ebb13d1a-a8af-4da1-b60f-1597d92e57a4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>c3506e53-2507-456a-8ec2-1946bbe806fc</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
